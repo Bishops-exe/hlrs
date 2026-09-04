@@ -1,0 +1,16 @@
+[package]
+name = "hlrs"
+version = "0.1.0"
+edition = "2024"
+license = "LGPL-3.0-or-later"
+description = "Rust syntax highlighting via highlight.js running on the Boa JavaScript engine"
+readme = "README.md"
+
+[dependencies]
+boa_engine = "0.22.0"
+reqwest = { version = "0.13.4", features = ["blocking"] }
+thiserror = "2.0.17"
+
+[dev-dependencies]
+stacker = "0.1.25"
+tokio = { version = "1.53.1", features = ["rt", "rt-multi-thread", "macros"] }
